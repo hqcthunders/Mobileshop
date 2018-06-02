@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+    Edit
+{% endblock %}
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        <label>Tên sản phẩm:</label>
+        <input type="text" name="name_product" value="{{ Products.name_product }}">
+        <label>Quantity:</label>
+        <input type="number" name="quantity" value="{{ Products.quantity }}">
+        <label>Base Price:</label>
+        <input type="number" name="base_price" value="{{ Products.base_price }}">
+        <button type="submit">Edit</button>
+    </form>
+{% endblock %}

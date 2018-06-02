@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}
+    Enemy
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-xs-12">
+            <h4>Thế Giới Di Động</h4>
+            <table id="simple-table" class="table  table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th class="hidden-480">Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                {% for Product, Price in Products %}
+                    <tr>
+                        <td>{{ Product }}</td>
+                        <td>{{ Price }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
