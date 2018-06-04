@@ -88,8 +88,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Mobile',
-        'USER': 'root',
-        'PASSWORD': 'Cu0ngkma$_$',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': ''
     }
@@ -141,6 +141,6 @@ LOGIN_REDIRECT_URL = 'home'
 EMAIL_USE_TLS = True
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_HOST_USER = "tintuc.ks.is@gmail.com"
-EMAIL_HOST_PASSWORD = "Cu0ngkma$_$"
+EMAIL_HOST_PASSWORD = ""
 EMAIL_PORT = 587
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
